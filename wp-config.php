@@ -37,6 +37,10 @@ define( 'DB_CHARSET', 'utf8' );
 /** O tipo de Collate do banco de dados. Não altere isso se tiver dúvidas. */
 define( 'DB_COLLATE', '' );
 
+// Congirucação extra
+define('WP_HOME', 'https://teste-brs-com-br.umbler.net/bem-querer-seguros/');
+define('WP_SITEURL', 'https://teste-brs-com-br.umbler.net/bem-querer-seguros/');
+
 /**#@+
  * Chaves únicas de autenticação e salts.
  *
