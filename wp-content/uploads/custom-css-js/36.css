@@ -72,6 +72,15 @@ div.wp-block-cover {
 	display: inline-block;
 }
 		
+.soliloquy-pager-link {
+	color:(--orange);
+	background:(--orange);
+}
+
+.soliloquy-pager-link.active {
+	
+}
+
 .soliloquy-controls-direction {
 	display: none;
 }
@@ -205,7 +214,12 @@ div.wp-block-group:has(.orange-small-bar) {
 .mission-value-vision-box {
 	height: 310px;
 	display: flex;
+	justify-content:center;
 	flex-wrap: nowrap !important;
+}
+		
+.arrow-box{
+	max-width: max-content;
 }
 		
 @media (max-width: 544px) {
@@ -237,6 +251,18 @@ div.wp-block-group:has(.orange-small-bar) {
 		padding-top: 0 !important;
 	}
 	
+	.mission-value-vision-group{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	.arrow-box, #next-msv, #previous-msv, .mission-value-vision-btn {
+		width: max-content;
+	}
+	
+	#next-msv a, #previous-msv a{
+		padding: 0
+	}
 	
 }
 		
