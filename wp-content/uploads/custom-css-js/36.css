@@ -192,6 +192,21 @@ div.wp-block-group:has(.orange-small-bar) {
 	background-color: red;
 }
 
+#next-msv, #previous-msv, .mission-value-vision-btn {
+	height: 100%;
+	width: max-content;
+}
+		
+.mission-value-vision-btn {
+	align-items: center;
+	display: flex;
+}
+
+.mission-value-vision-box {
+	height: 310px;
+	display: flex;
+	flex-wrap: nowrap !important;
+}
 		
 @media (max-width: 544px) {
 	.soliloquy-wrapper {
@@ -221,6 +236,8 @@ div.wp-block-group:has(.orange-small-bar) {
 	#quem-somos {
 		padding-top: 0 !important;
 	}
+	
+	
 }
 		
 @media (min-width: 545px) {
