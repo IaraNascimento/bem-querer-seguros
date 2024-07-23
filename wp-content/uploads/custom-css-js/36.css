@@ -1,0 +1,254 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */
+
+:root {
+	--orange: #f47d35;
+	--darkgray: #3C3939;
+    --lightgray: #E0DCDB;
+}
+		
+.lightgray {
+	background: var(--lightgray);
+}
+
+
+body {
+	font-family: "Montserrat", sans-serif;
+	min-width: 340px;
+	min-height: 480px;
+}
+
+header.site-header {
+	z-index: 9999;
+	top: 0;
+	position: fixed !important;
+}
+		
+div.wp-block-cover {
+	display: none;
+}
+
+.soliloquy-container .soliloquy-caption {
+	background-color: transparent !important;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	max-width: 1240px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.soliloquy-container .soliloquy-caption-inside {
+	color: var(--darkgray) !important;
+	text-align: left !important;
+	font-family: "Montserrat", sans-serif;
+	padding: 0;
+}
+		
+.soliloquy-container .soliloquy-caption-inside h1 {
+	color: var(--darkgray) !important;
+	font-family: "Montserrat", sans-serif;
+}
+		
+.soliloquy-container .soliloquy-caption-inside p {
+	max-width: 400px;
+	margin-top: 24px;
+}
+		
+.soliloquy-container .soliloquy-caption-inside a,
+.soliloquy-container .soliloquy-caption-inside a::after {
+	height: 40px;
+	display: inline-block;
+}
+		
+.soliloquy-controls-direction {
+	display: none;
+}
+
+.soliloquy-container .soliloquy-caption-inside a {
+	display: inline-block;
+	background: var(--darkgray);
+	color: white;
+	text-transform: uppercase;
+	border-radius: 12px;
+	padding: 0 0 0 24px;
+	font-family: museo, serif;
+	font-style: normal;
+	font-weight: 400;
+	margin-top: 48px !important; 
+}
+	
+.soliloquy-container .soliloquy-caption-inside a::after {
+	content: ">";
+	background: var(--orange);
+	height: 100%;
+	padding: 12px 24px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	margin-left: 16px
+}
+		
+.soliloquy-image {
+	display: block;
+	width: auto;
+	object-fit: cover;
+	object-position: right;
+}
+		
+.soliloquy-container .soliloquy-pager,
+.soliloquy-container .soliloquy-caption,
+.soliloquy-container .soliloquy-controls-auto {
+	display: block !important;
+}
+		
+h2.wp-block-heading b {
+	color: var(--orange);
+}
+		
+h2.wp-block-heading,
+h2.wp-block-heading * {
+	font-weight: 700;
+	text-align: center;
+}
+		
+div.wp-block-group:has(.orange-small-bar) {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+		
+.orange-small-bar {
+	background-color: var(--orange);
+	border: 4px solid var(--orange);
+  	border-radius: 5px;
+	width: 120px;
+}
+		
+.mission-value-vision-img {
+	text-align: center;
+}
+		
+.mission-value-vision-btn {
+	background-color: transparent !important;
+	color: var(--orange) !important;
+}
+		
+#next-msv {
+	display: flex;
+	flex-direction: row-reverse;
+}
+		
+.number-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 54px !important;
+}
+		
+.orange-number {
+	color: var(--orange) !important;
+	margin-bottom: 0 !important;
+}
+		
+.plus {
+	margin-left: -20px;
+}
+		
+.subtitle-number {
+	margin-top: -16px !important;
+	font-size: 36px !important;
+}
+
+#page .site-content {
+    margin-top: 80px;
+}
+		
+.soliloquy-container .soliloquy-pager-link:after {
+    display: inline-block;
+    content: " ";
+    border-radius: 8px;
+    border: 2px solid red;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+		
+.soliloquy-container .soliloquy-pager-link:after:hover,
+.soliloquy-container .soliloquy-pager-link.active:after {
+	background-color: red;
+}
+
+		
+@media (max-width: 544px) {
+	.soliloquy-wrapper {
+		margin-top: 120px !important;
+	}
+	
+	.soliloquy-wrapper,
+	.soliloquy-wrapper .soliloquy-viewport,
+	.soliloquy-wrapper .soliloquy-viewport .soliloquy-item,
+	.soliloquy-wrapper .soliloquy-viewport .soliloquy-item .soliloquy-image {
+		min-height: calc(96vh - 120px) !important;
+	}
+	
+	.soliloquy-container .soliloquy-caption {
+		width: calc(100% - 96px) !important;
+		top: 24px;
+	}
+	
+	.soliloquy-caption-inside h1 {
+		font-size: 32px;
+	}
+
+	.soliloquy-caption-inside p {
+		font-size: 28px;
+	}
+	
+	#quem-somos {
+		padding-top: 0 !important;
+	}
+}
+		
+@media (min-width: 545px) {
+	.soliloquy-wrapper {
+		margin-top: 148px !important;
+	}
+	
+	.soliloquy-wrapper,
+	.soliloquy-wrapper .soliloquy-viewport,
+	.soliloquy-wrapper .soliloquy-viewport .soliloquy-item,
+	.soliloquy-wrapper .soliloquy-viewport .soliloquy-item .soliloquy-image {
+		min-height: calc(100vh - 148px) !important;
+	}
+	
+	.soliloquy-container .soliloquy-caption {
+		width: calc(100% - 240px) !important;
+		padding: 0 8px;
+		top: 64px;
+	}
+	
+	.soliloquy-caption-inside h1 {
+		font-size: 48px;
+		margin-top: 160px;
+	}
+
+	.soliloquy-caption-inside p {
+		font-size: 32px;
+	}
+
+}</style>
+<!-- end Simple Custom CSS and JS -->
