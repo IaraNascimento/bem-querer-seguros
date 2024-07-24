@@ -1,0 +1,125 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+
+:root {
+	--orange: #f47d35;
+	--darkgray: #3C3939;
+    --lightgray: #E0DCDB;
+}
+
+.orange-number {
+	color: var(--orange) !important;
+	margin-bottom: 0 !important;
+	font-size: 86px !important;
+	font-family: "Montserrat", sans-serif !important;
+}
+		
+.plus {
+	margin-left: -20px;
+	font-size: 54px !important;
+	font-family: "Montserrat", sans-serif !important;
+	vertical-align: middle;
+	margin-bottom: 0 !important;
+	margin-top: 20px !important;
+}
+		
+.numbers-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: none !important;
+	padding: 100px;
+	/*width: 100vw;
+	margin-left: -10vw !important;*/
+}
+		
+.numbers-div div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: fit-content;
+	max-height: 54px;
+}
+		
+.numbers-div h2 {
+	font-weight: 900 !important;
+}
+		
+.numbers-div p {
+	color: var(--darkgray);
+	margin-bottom: 0 !important;
+}
+		
+.subtitle-number {
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+.why-choose figure {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.why-choose {
+	text-align: center;
+}
+		
+.below-numbers {
+	text-align: center;
+}
+
+.why-choose p {
+	margin-top: 16px;
+	font-size: 1.3rem;
+	color: var(--darkgray);
+	line-height: 30px;
+}
+
+.why-choose .wp-block-columns {
+	justify-content: space-around;
+}
+		
+.below-numbers h2 {
+	font-size: 2.5rem;
+	width: 60vw;
+	margin-bottom: 40px;
+	display: inline-block;
+}
+
+.why-choose .wp-block-columns .wp-block-column {
+	max-width: 30vw;
+}
+
+@media (max-width: 544px) {
+	.why-choose figure {
+		width: 80px;
+	}
+
+	.plus {
+		margin-left: -10px;
+		margin-top: 20px !important;
+	}
+	
+	.subtitle-number {
+		font-size: 1.5rem;
+		margin-top: 0.7rem;
+	}
+}
+		
+@media (max-width: 781px) {
+	.ignorable {
+		display: none;
+	}
+}</style>
+<!-- end Simple Custom CSS and JS -->
