@@ -71,7 +71,7 @@ div.wp-block-cover {
 	height: 40px;
 	display: inline-block;
 }
-		
+/*		
 .soliloquy-pager-link {
 	color:(--orange);
 	background:(--orange);
@@ -80,7 +80,7 @@ div.wp-block-cover {
 .soliloquy-pager-link.active {
 	
 }
-
+*/
 .soliloquy-controls-direction {
 	display: none;
 }
@@ -158,33 +158,12 @@ div.wp-block-group:has(.orange-small-bar) {
 	display: flex;
 	flex-direction: row-reverse;
 }
-		
-.number-div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 54px !important;
-}
-		
-.orange-number {
-	color: var(--orange) !important;
-	margin-bottom: 0 !important;
-}
-		
-.plus {
-	margin-left: -20px;
-}
-		
-.subtitle-number {
-	margin-top: -16px !important;
-	font-size: 36px !important;
-}
 
 #page .site-content {
     margin-top: 80px;
 }
 		
-.soliloquy-container .soliloquy-pager-link:after {
+/*.soliloquy-container .soliloquy-pager-link:after {
     display: inline-block;
     content: " ";
     border-radius: 8px;
@@ -200,13 +179,7 @@ div.wp-block-group:has(.orange-small-bar) {
 .soliloquy-container .soliloquy-pager-link.active:after {
 	background-color: red;
 }
-		
-.partner-gallery figure,
-.partner-gallery figure img {
-	margin-top: auto !important;
-    margin-bottom: auto !important;
-}
-
+*/
 #next-msv, #previous-msv, .mission-value-vision-btn {
 	height: 100%;
 	width: max-content;
@@ -228,9 +201,14 @@ div.wp-block-group:has(.orange-small-bar) {
 	max-width: max-content;
 }
 		
+.main-header-bar{
+	background-color: transparent;
+	transition: background-color 0.2s ease-in-out
+}
+		
 @media (max-width: 544px) {
 	.soliloquy-wrapper {
-		margin-top: 120px !important;
+		margin-top: 50px !important;
 	}
 	
 	.soliloquy-wrapper,
@@ -269,12 +247,11 @@ div.wp-block-group:has(.orange-small-bar) {
 	#next-msv a, #previous-msv a{
 		padding: 0
 	}
-	
 }
 		
 @media (min-width: 545px) {
 	.soliloquy-wrapper {
-		margin-top: 148px !important;
+		margin-top: 48px !important;
 	}
 	
 	.soliloquy-wrapper,

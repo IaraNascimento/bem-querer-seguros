@@ -1,0 +1,46 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+:root {
+	--orange: #f47d35;
+	--darkgray: #3C3939;
+    --lightgray: #E0DCDB;
+	--tamanho: 8px;
+	--borda: 2px;
+}
+				
+.soliloquy-pager-link{
+	background-image: none !important;
+}
+		
+.soliloquy-container .soliloquy-pager-link:after {
+    display: inline-block;
+    content: " ";
+	transition: 0.2s all ease;
+    border-radius: calc(var(--tamanho));
+    width: calc(var(--tamanho)*2);
+    height: calc(var(--tamanho)*2);
+    position: absolute;
+    top: 0;
+    left: 0;
+	background-color: var(--orange);
+}
+		
+.soliloquy-container .soliloquy-pager-link.active:after {
+	width: calc(var(--tamanho)*2 - var(--borda)*2 - 2px);
+    height: calc(var(--tamanho)*2 - var(--borda)*2 - 2px);
+	top: calc(var(--borda) + 1px);
+    left: calc(var(--borda) + 1px);
+}
+		
+.soliloquy-pager-link.active:before {
+	display: inline-block;
+    content: " ";
+    border-radius: calc(var(--tamanho));
+    width: calc(var(--tamanho)*2);
+    height: calc(var(--tamanho)*2);
+    position: absolute;
+	top: 0;
+    left: 0;
+	border: 2px solid var(--darkgray) !important;
+}</style>
+<!-- end Simple Custom CSS and JS -->
