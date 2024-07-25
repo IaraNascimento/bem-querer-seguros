@@ -1,16 +1,5 @@
 <!-- start Simple Custom CSS and JS -->
 <style type="text/css">
-/* Add your CSS code here.
-
-For example:
-.example {
-    color: red;
-}
-
-For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
-
-End of comment */
-
 :root {
 	--orange: #f47d35;
 	--darkgray: #3C3939;
@@ -158,27 +147,6 @@ div.wp-block-group:has(.orange-small-bar) {
 	display: flex;
 	flex-direction: row-reverse;
 }
-		
-.number-div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 54px !important;
-}
-		
-.orange-number {
-	color: var(--orange) !important;
-	margin-bottom: 0 !important;
-}
-		
-.plus {
-	margin-left: -20px;
-}
-		
-.subtitle-number {
-	margin-top: -16px !important;
-	font-size: 36px !important;
-}
 
 #page .site-content {
     margin-top: 80px;
@@ -201,43 +169,16 @@ div.wp-block-group:has(.orange-small-bar) {
 	background-color: red;
 }
 		
-.partner-gallery figure,
-.partner-gallery figure img {
-	margin-top: auto !important;
-    margin-bottom: auto !important;
-}
-
-#next-msv, #previous-msv, .mission-value-vision-btn {
-	height: 100%;
-	width: max-content;
-}
-		
-.mission-value-vision-btn {
-	align-items: center;
-	display: flex;
-}
-
-.mission-value-vision-box {
-	height: 310px;
-	display: flex;
-	justify-content:center;
-	flex-wrap: nowrap !important;
-}
-		
-.arrow-box{
-	max-width: max-content;
-}
-		
 @media (max-width: 544px) {
 	.soliloquy-wrapper {
-		margin-top: 120px !important;
+		margin-top: 50px !important;
 	}
 	
 	.soliloquy-wrapper,
 	.soliloquy-wrapper .soliloquy-viewport,
 	.soliloquy-wrapper .soliloquy-viewport .soliloquy-item,
 	.soliloquy-wrapper .soliloquy-viewport .soliloquy-item .soliloquy-image {
-		min-height: calc(96vh - 120px) !important;
+		min-height: calc(100vh - 48px) !important;
 	}
 	
 	.soliloquy-container .soliloquy-caption {
@@ -269,12 +210,11 @@ div.wp-block-group:has(.orange-small-bar) {
 	#next-msv a, #previous-msv a{
 		padding: 0
 	}
-	
 }
 		
 @media (min-width: 545px) {
 	.soliloquy-wrapper {
-		margin-top: 148px !important;
+		margin-top: 48px !important;
 	}
 	
 	.soliloquy-wrapper,

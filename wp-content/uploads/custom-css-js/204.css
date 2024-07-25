@@ -1,0 +1,46 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+#next-msv, #previous-msv, .mission-value-vision-btn {
+	height: 100%;
+	width: max-content;
+}
+		
+.mission-value-vision-btn {
+	align-items: center;
+	display: flex;
+}
+
+.mission-value-vision-box {
+	height: 310px;
+	display: flex;
+	justify-content:center;
+	flex-wrap: nowrap !important;
+}
+		
+.arrow-box{
+	max-width: max-content;
+}
+		
+.main-header-bar{
+	background-color: transparent;
+	transition: background-color 0.2s ease-in-out
+}
+
+.ast-above-header-bar{
+	padding: 0;
+}
+
+.soliloquy-container .soliloquy-caption-inside{
+	padding-top: 70px !important;
+}
+		
+@media (max-width: 544px) {
+	.soliloquy-wrapper {
+		margin-top: 50px !important;
+	}
+}
+		
+@media (min-width: 545px) {
+
+}</style>
+<!-- end Simple Custom CSS and JS -->
