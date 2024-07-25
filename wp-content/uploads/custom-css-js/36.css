@@ -163,23 +163,6 @@ div.wp-block-group:has(.orange-small-bar) {
     margin-top: 80px;
 }
 		
-/*.soliloquy-container .soliloquy-pager-link:after {
-    display: inline-block;
-    content: " ";
-    border-radius: 8px;
-    border: 2px solid red;
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-		
-.soliloquy-container .soliloquy-pager-link:after:hover,
-.soliloquy-container .soliloquy-pager-link.active:after {
-	background-color: red;
-}
-*/
 #next-msv, #previous-msv, .mission-value-vision-btn {
 	height: 100%;
 	width: max-content;
