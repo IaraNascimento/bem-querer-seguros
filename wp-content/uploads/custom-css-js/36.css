@@ -27,6 +27,12 @@ div.wp-block-cover {
 	display: none;
 }
 
+.ast-above-header.ast-above-header-bar,
+.ast-header-break-point #masthead.site-header .ast-above-header-bar {
+	padding-top: 4px !important;
+	padding-bottom: 4px !important;
+}
+		
 .soliloquy-container .soliloquy-caption {
 	background-color: transparent !important;
 	position: absolute;
@@ -60,14 +66,13 @@ div.wp-block-cover {
 	height: 40px;
 	display: inline-block;
 }
-		
-.soliloquy-pager-link {
-	color:(--orange);
-	background:(--orange);
+
+.soliloquy-container .soliloquy-pager {
+	bottom: 40px !important;
 }
 
-.soliloquy-pager-link.active {
-	
+.soliloquy-container .soliloquy-pager-item {
+	margin: 0 0 0 16px !important;
 }
 
 .soliloquy-controls-direction {
@@ -204,7 +209,7 @@ div.wp-block-group:has(.orange-small-bar) {
 	.soliloquy-wrapper .soliloquy-viewport,
 	.soliloquy-wrapper .soliloquy-viewport .soliloquy-item,
 	.soliloquy-wrapper .soliloquy-viewport .soliloquy-item .soliloquy-image {
-		min-height: calc(100vh - 148px) !important;
+		min-height: calc(100vh - 48px) !important;
 	}
 	
 	.soliloquy-container .soliloquy-caption {
