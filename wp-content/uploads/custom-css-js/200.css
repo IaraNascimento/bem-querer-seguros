@@ -39,12 +39,15 @@ End of comment */
 	justify-content: center;
 	align-items: center;
 	max-width: none !important;
-	padding: 100px;
-	/*width: 100vw;
-	margin-left: -10vw !important;*/
+	padding: 30px;
 }
 		
-.numbers-div div {
+.info-numbers {
+	flex-direction: column;
+	margin: 15px !important;
+}
+		
+.numbers-div div div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -56,14 +59,20 @@ End of comment */
 	font-weight: 900 !important;
 }
 		
+.numbers-div h3 {
+	font-size: 3rem;
+}
+		
 .numbers-div p {
 	color: var(--darkgray);
 	margin-bottom: 0 !important;
 }
 		
-.subtitle-number {
+.subtitle-number p {
 	font-size: 2rem;
 	line-height: 2rem;
+	margin-top: 1rem;
+	font-weight: 100 !important;
 }
 
 .why-choose figure {
