@@ -1,0 +1,91 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+
+:root {
+	--orange: #f47d35;
+	--darkgray: #3C3939;
+    --lightgray: #E0DCDB;
+}
+
+#assist {
+	background: var(--orange);
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+}
+		
+#assist .mission-value-vision-box {
+	margin-top: 0 !important;
+}
+		
+.assist-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+			
+.assist-title div {
+	display: flex;
+	flex-direction: drow;
+}
+		
+.assist-title div h2 {
+	font-size: 1.7rem;
+	margin: 3px;
+}
+
+#assist .gray {
+	color: var(--darkgray);
+}
+		
+#assist .white {
+	color: white;
+}
+		
+.white-bar {
+	background-color: white;
+	border: 4px solid white;
+  	border-radius: 5px;
+	width: 9rem;
+	margin-bottom: 0 !important;
+}
+		
+.assist-btn {
+	color: white !important;
+	font-weight: bold !important;
+	background-color: transparent !important;
+}
+		
+#assist-body {
+	font-size: 1.5rem;
+	color: white;
+}
+		
+.previous-assist-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+		
+.center-assist {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+		
+#assist-img {
+	width: 15rem !important;
+}</style>
+<!-- end Simple Custom CSS and JS -->
