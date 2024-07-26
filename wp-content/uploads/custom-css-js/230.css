@@ -1,0 +1,51 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+:root {
+	--footerColor: #5D5C5A;
+	--orange: #f47d35;
+}
+
+footer.site-footer {
+	display: none;
+}
+
+.footer-wrapper {
+	background-color: var(--footerColor) !important;
+}
+		
+.footer-wrapper .wp-block-column,
+.footer-wrapper .wp-block-columns {
+	text-align: center;
+	height: 100%;
+}
+		
+.footer-wrapper .footer-main-text {
+	color: white;
+	font-size: 24px;
+	margin-bottom: 80px;
+}	
+		
+.footer-wrapper .footer-text {
+	color: white;
+	font-size: 20px;
+}
+		
+.footer-wrapper .footer-text strong {
+	color: var(--orange) !important;
+	font-size: 24px;
+}
+		
+.footer-wrapper button.footer-btn,
+.footer-wrapper button.footer-social {
+	cursor: normal;
+	border: none !important;
+	outline: none !important;
+	box-shadow: none !important;
+	color: white;
+	background-color: transparent;
+	font-weight: normal;
+	font-size: 24px;
+	padding-left: 0;
+	padding-right: 0;
+}</style>
+<!-- end Simple Custom CSS and JS -->
