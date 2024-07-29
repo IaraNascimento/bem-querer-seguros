@@ -156,7 +156,13 @@ div.wp-block-group:has(.orange-small-bar) {
 #page .site-content {
     margin-top: 80px;
 }
-		
+
+.full-width{
+	max-width: 100vw !important;
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+}
 @media (max-width: 544px) {
 	.soliloquy-wrapper {
 		margin-top: 50px !important;
