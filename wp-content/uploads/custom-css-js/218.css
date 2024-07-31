@@ -1,6 +1,6 @@
 <!-- start Simple Custom CSS and JS -->
 <style type="text/css">
-#ovp {
+.ovp-group {
 	background-color: var(--lightgray);
 	max-width: 100vw !important;
     width: 100vw !important;
@@ -72,6 +72,9 @@
 	font-size: 18px;
 	font-family: Montserrat, sans-serif;
 }
+.cotar-button:hover{
+	color: white !important;	
+}
 .cotar-button-left{
 	display: flex;
 	width: 100%;
@@ -91,5 +94,20 @@
 	background-color: orange;
 	border-top-right-radius: 11px;
 	border-bottom-right-radius: 11px;
+}
+.expandable-box-content .open a{
+	width: max-content !important;
+}
+
+@media (max-width: 544px) {
+	.ovp-expandable-group{
+		padding-inline: 0 !important;	
+	}
+	.expandable-box-title{
+		border-radius: 10px !important;
+	}
+	.expandable-box-content{
+		width: 95% !important;	
+	}
 }</style>
 <!-- end Simple Custom CSS and JS -->

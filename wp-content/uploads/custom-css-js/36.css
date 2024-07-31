@@ -163,6 +163,10 @@ div.wp-block-group:has(.orange-small-bar) {
     margin-left: calc(-50vw + 50%) !important;
     margin-right: calc(-50vw + 50%) !important;
 }
+a{
+	text-decoration: none !important;
+	width: max-content;
+}
 @media (max-width: 544px) {
 	.soliloquy-wrapper {
 		margin-top: 50px !important;
