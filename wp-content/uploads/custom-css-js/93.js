@@ -63,16 +63,14 @@ function checkScroll(index) {
 		});
 		
 		linkHeader.forEach(linkButton => {
-			linkButton.setAttribute('fill', 'var(--orange)');
+			linkButton.style.fill = 'var(--orange)';
 		});
 		
 		sandwichMenu.forEach(item => {
-			item.setAttribute('fill', 'var(--orange)');
+			item.style.fill = 'var(--orange)';
 		});
 		
 	} else {
-		sandwichMenuFirst.style.fill = "white !important";
-		sandwichMenuSecond.style.fill = "white !important";
 		upperHeader.style.backgroundColor = "var(--orange)";
 		headerLogo.src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/06/Marca-BemQuerer-Seguros-Branca.png";
 		headerLogo.srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/06/Marca-BemQuerer-Seguros-Branca.png";
@@ -83,11 +81,11 @@ function checkScroll(index) {
 		});
 		
 		linkHeader.forEach(linkButton => {
-			linkButton.setAttribute('fill', 'white');
+			linkButton.style.fill = 'white';
 		});
 		
 		sandwichMenu.forEach(item => {
-			item.setAttribute('fill', 'white');
+			item.style.fill = 'white';
 		});
 		
 	}

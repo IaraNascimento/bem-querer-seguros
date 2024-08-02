@@ -1,0 +1,80 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+
+#formulario {
+	padding-inline-start: 30px !important; 
+	padding-inline-end: 30px !important; 
+}
+
+.we-call-title,
+.we-call-subtitle {
+	width: 80%;
+}
+
+.we-call-title .wp-block-heading {
+	text-align: left;
+}
+
+.we-call-subtitle p {
+	font-weight: bolder;
+	color: var(--darkgray);
+}
+
+.wpforms-field {
+	width: 80% !important;
+}
+
+.wpforms-field::placeholder {
+	font-weight: bolder !important;
+}
+
+.wpforms-field-container input {
+	border-width: 0 !important;
+	border-radius: 16px !important;
+	min-width: 100%;
+	margin: -10px;
+	height: 50px !important;
+}
+
+.wpforms-field-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wpforms-submit {
+	margin-left: 10% !important;
+	border-radius: 12px !important;
+	background: var(--darkgray) !important;
+	text-transform: uppercase !important;
+	padding: 0 0 0 24px !important;
+	font-family: "Montserrat", sans-serif !important;
+	font-style: normal !important;
+	height: 43px !important;
+}
+	
+.wpforms-submit::after {
+	content: ">";
+	background: var(--orange);
+	height: 100%;
+	padding: 12px 24px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	margin-left: 16px;
+	font-weight: bolder !important;
+}
+
+-ms-input-placeholder {
+	font-weight: bolder !important;
+}</style>
+<!-- end Simple Custom CSS and JS -->
