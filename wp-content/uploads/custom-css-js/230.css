@@ -28,6 +28,7 @@ footer.site-footer {
 .footer-wrapper .footer-text {
 	color: white;
 	font-size: 20px;
+	margin: 0 !important;
 }
 		
 .footer-wrapper .footer-text strong {
@@ -50,12 +51,13 @@ footer.site-footer {
 }
 		
 .footer-social{
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
+	padding: 0 !important;
 }
 
 .email{
-	width: 45px;
+	width: 40px;
 	height: 30px;
 	
 }
@@ -64,6 +66,9 @@ footer.site-footer {
 	display: flex;
 	flex-direction: row;
 	align-items:center;
+	justify-content: center;
+	margin: 0;
+	padding-bottom: 20px;
 }
 		
 .footer-last-icon{
@@ -79,5 +84,23 @@ footer.site-footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.footer-btn{
+	padding: 0 !important;
+}
+
+		
+.footer-divisor{
+	margin-top: 0 !important;
+	margin-bottom: 20px !important;
+}
+		
+.footer-divisor p{
+	margin-bottom: 10px !important;
+}
+
+.footer-divisor hr{
+	margin: 0;
+	height: 2px;	
 }</style>
 <!-- end Simple Custom CSS and JS -->
