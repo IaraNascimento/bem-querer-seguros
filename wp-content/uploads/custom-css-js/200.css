@@ -11,6 +11,11 @@ For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/cs
 
 End of comment */ 
 
+@font-face {
+   font-family: 'Nexa';
+   src: url('http://localhost/bem-querer-seguros/wp-content/uploads/fonts/472/Nexa-ExtraLight.ttf') format('ttf');
+}
+
 :root {
 	--orange: #f47d35;
 	--darkgray: #3C3939;
@@ -73,6 +78,7 @@ End of comment */
 	line-height: 2rem;
 	margin-top: 1rem;
 	font-weight: 100 !important;
+	font-family: "Nexa", sans-serif;
 }
 
 .why-choose figure {
@@ -133,6 +139,13 @@ End of comment */
 }
 
 
+@media (max-width: 450px) {
+	.partners-gallery-div {
+		width: 300px;
+		height: 300px;
+	}
+}
+		
 @media (max-width: 544px) {
 	.why-choose figure {
 		width: 80px;
