@@ -192,6 +192,9 @@ a{
 #ast-scroll-top {
 	z-index: 0 !important;
 }
+p{
+	margin: 0 !important;	
+}
 		
 @media (max-width: 544px) {
 	.soliloquy-wrapper {
