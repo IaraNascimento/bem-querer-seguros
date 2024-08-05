@@ -118,6 +118,20 @@ End of comment */
     padding-inline: 0 !important;
     padding-top: 0 !important;
 }
+		
+.partners-gallery-div {
+	width: 400px;
+	height: 400px;
+	display: flex;
+  	justify-content: center;
+	align-items: center;
+	margin-top: 0 !important;
+}
+		
+.partners-gallery-div img {
+	width: 100%;
+}
+
 
 @media (max-width: 544px) {
 	.why-choose figure {
