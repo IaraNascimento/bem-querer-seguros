@@ -76,7 +76,7 @@ footer.site-footer {
 }
 		
 .social-text{
-	font-size: 24px !important;
+	font-size: 20px !important;
 	margin: 0 !important;
 }
 		
@@ -89,18 +89,34 @@ footer.site-footer {
 	padding: 0 !important;
 }
 
-		
 .footer-divisor{
 	margin-top: 0 !important;
-	margin-bottom: 20px !important;
+	margin-bottom: 30px !important;
 }
 		
 .footer-divisor p{
-	margin-bottom: 10px !important;
+	margin-bottom: 15px !important;
 }
 
 .footer-divisor hr{
 	margin: 0;
 	height: 2px;	
+}
+		
+#footer-mobile {
+	display: none;
+}
+		
+#footer-desktop {
+	display: flex;	
+}
+@media (max-width: 782px){
+	#footer-mobile{
+		display: block;
+	}
+	
+	#footer-desktop{
+		display: none;	
+	}
 }</style>
 <!-- end Simple Custom CSS and JS -->
