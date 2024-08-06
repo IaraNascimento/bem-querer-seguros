@@ -1,134 +1,75 @@
 <!-- start Simple Custom CSS and JS -->
 <script type="text/javascript">
- 
+const imageUrlList = [
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Unimed_box_logo.svg_.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Amil.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Seguros-Unimed.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Sulamerica.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/bradesco-saude-logo-84BBE89C87-seeklogo.com_.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Notredame.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/porto-seguro-logo-1-3.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/golden-cross-logo-conteudo.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Plamer.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Mapfre.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Liberty.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Assim.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/logo-tokio-marine-seguradora-1024-e1722867121862.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Allianz.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/bradesco-seguros-logo-1-1.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/icatu-seguros-logo-0.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Logo_MAG_Seguros.svg_.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/logo-odontoprev.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Logo-Amil-Dental.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Sulamerica-odonto-1.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/HDI-1.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Azul-seguros.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Aliro.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Rodobens.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/sompo-seguros.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/suhai-seguradora.png",
+	"http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/images.png",
+];
+	
+let imgById = document.getElementById('partners-img');
+	
+function moveImage(img, position, opacity) {
+	img.style.marginLeft = position;
+	img.style.opacity = opacity;
+}
 
-var partnerNumber = 2700;
+function changeImage(img, list, index) {
+	img.src = list[index];
+}
 
-function changePartnerNumber() {
-	var modulePartnerNumber = partnerNumber % 27;
-	switch (modulePartnerNumber) {
-		case 26:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/images.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/images.png";
-			break;
-		case 25:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/suhai-seguradora.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/suhai-seguradora.png";
-			break;
-		case 24:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/sompo-seguros.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/sompo-seguros.png";
-			break;
-		case 23:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Rodobens.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Rodobens.png";
-			break;
-		case 22:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Aliro.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Aliro.png";
-			break;
-		case 21:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Azul-seguros.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Azul-seguros.png";
-			break;
-		case 20:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/HDI-1.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/HDI-1.png";
-			break;
-		case 19:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Sulamerica-odonto.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Sulamerica-odonto.png";
-			break;
-		case 18:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Logo-Amil-Dental.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Logo-Amil-Dental.png";
-			break;
-		case 17:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/logo-odontoprev.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/logo-odontoprev.png";
-			break;
-		case 16:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Logo_MAG_Seguros.svg_.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Logo_MAG_Seguros.svg_.png";
-			break;
-		case 15:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/icatu-seguros-logo-0.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/icatu-seguros-logo-0.png";
-			break;
-		case 14:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/bradesco-seguros-logo-1-1.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/bradesco-seguros-logo-1-1.png";
-			break;
-		case 13:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Allianz.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Allianz.png";
-			break;
-		case 12:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/logo-tokio-marine-seguradora-1024-e1722867121862.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/logo-tokio-marine-seguradora-1024-e1722867121862.png";
-			break;
-		case 11:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Assim.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Assim.png";
-			break;
-		case 10:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Liberty.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Liberty.png";
-			break;
-		case 9:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Mapfre.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Mapfre.png";
-			break;
-		case 8:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Plamer.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Plamer.png";
-			break;
-		case 7:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/golden-cross-logo-conteudo.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/golden-cross-logo-conteudo.png";
-			break;
-		case 6:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/porto-seguro-logo-1-3.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/porto-seguro-logo-1-3.png";
-			break;
-		case 5:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Notredame.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Notredame.png";
-			break;
-		case 4:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/bradesco-saude-logo-84BBE89C87-seeklogo.com_.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/bradesco-saude-logo-84BBE89C87-seeklogo.com_.png";
-			break;
-		case 3:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Sulamerica.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Sulamerica.png";
-			break;
-		case 2:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Seguros-Unimed.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Seguros-Unimed.png";
-			break;
-		case 1:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Amil.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Amil.png";
-			break;
-		case 0:
-		default:
-			document.getElementById("partners-img").src = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Unimed_box_logo.svg_.png";
-			document.getElementById("partners-img").srcset = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Unimed_box_logo.svg_.png";
-
+function changeIndex(current, size) {
+	if (current < size -1) {
+		return ++current
 	}
+	return 0;
 }
 
-function previousPartnerNumber() {
-	partnerNumber--;
-	changePartnerNumber();
-}
+let index = 0;
+let interval = 4000;
+			
+moveImage(imgById, '0', 1);
+changeImage(imgById, imageUrlList, index);
 
-function nextPartnerNumber() {
-  	partnerNumber++;
-	changePartnerNumber();
-	setTimeout(nextPartnerNumber, 2000)
-}
+setInterval(() => {
+			
+	setTimeout(() => {
+		moveImage(imgById, '-320px', 0);
+	}, 2000);
 
-setTimeout(nextPartnerNumber, 2000)</script>
+	setTimeout(() => {
+		changeImage(imgById, imageUrlList, index);
+		moveImage(imgById, '320px', 0);
+	}, 2500);
+
+	setTimeout(() => {
+		moveImage(imgById, '0', 1);
+	}, 3000);
+
+	index = changeIndex(index, imageUrlList.length);
+
+}, 5000);</script>
 <!-- end Simple Custom CSS and JS -->

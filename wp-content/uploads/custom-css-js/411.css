@@ -16,22 +16,24 @@ End of comment */
 	padding-inline-end: 30px !important; 
 }
 
-.we-call-title,
-.we-call-subtitle {
-	width: 80%;
+.we-call-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .we-call-title .wp-block-heading {
-	text-align: left;
+	text-align: center;
 }
 
 .we-call-subtitle p {
 	font-weight: bolder;
 	color: var(--darkgray);
+	text-align: center;
 }
 
 .wpforms-field {
-	width: 80% !important;
+	width: 50% !important;
 }
 
 .wpforms-field::placeholder {
@@ -53,7 +55,7 @@ End of comment */
 }
 
 .wpforms-submit {
-	margin-left: 10% !important;
+	margin-left: 25% !important;
 	border-radius: 12px !important;
 	background: var(--darkgray) !important;
 	text-transform: uppercase !important;
@@ -76,5 +78,11 @@ End of comment */
 
 -ms-input-placeholder {
 	font-weight: bolder !important;
+}
+
+@media (max-height: 544px) {
+	.wpforms-field {
+		width: 80% !important;
+	}
 }</style>
 <!-- end Simple Custom CSS and JS -->

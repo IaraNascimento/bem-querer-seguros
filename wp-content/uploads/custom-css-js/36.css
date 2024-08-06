@@ -220,10 +220,12 @@ p{
 	
 	.soliloquy-caption-inside h1 {
 		font-size: 32px;
+		width: 50vw;
 	}
 
 	.soliloquy-caption-inside p {
 		font-size: 28px;
+		width: 50vw;
 	}
 	
 	#quem-somos {
