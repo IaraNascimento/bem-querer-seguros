@@ -123,14 +123,23 @@ End of comment */
 .partners-gallery-div {
 	overflow: hidden;
 	width: 320px;
-	height: 320px;
+	height: 450px;
 	display: flex;
 	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
 }
 		
 .partners-gallery-div img {
 	width: 100%;
 	transition: all 0.5s ease;
+	padding-bottom: 100px;
+}
+		
+.partners-body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 @media (max-width: 450px) {
@@ -153,6 +162,10 @@ End of comment */
 	.subtitle-number {
 		font-size: 1.5rem;
 		margin-top: 0.7rem;
+	}
+	
+	.partners-body {
+		flex-direction: column;
 	}
 }
 		

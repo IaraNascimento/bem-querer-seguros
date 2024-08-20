@@ -80,9 +80,13 @@ End of comment */
 	font-weight: bolder !important;
 }
 
-@media (max-height: 544px) {
+@media (max-width: 544px) {
 	.wpforms-field {
 		width: 80% !important;
+	}
+	
+	.wpforms-submit {
+		margin-left: 10% !important;
 	}
 }</style>
 <!-- end Simple Custom CSS and JS -->
