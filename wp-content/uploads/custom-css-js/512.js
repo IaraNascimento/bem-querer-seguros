@@ -1,16 +1,16 @@
-<!-- start Simple Custom CSS and JS -->
+< !--start Simple Custom CSS and JS-- >
 <script type="text/javascript">
  
 
 function fixImage(index) {
 	if (screen.width > 544) {
-		var image1Url = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Plano-de-Saude.png";
-		var image2Url = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/07/Consorcio.png";
-		var image3Url = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Seguro-Auto-paisagem.png";
+		var image1Url = "https://www.bemquererseguros.com/wp-content/uploads/2024/08/Plano-de-Saude.png";
+		var image2Url = "https://www.bemquererseguros.com/wp-content/uploads/2024/07/Consorcio.png";
+		var image3Url = "https://www.bemquererseguros.com/wp-content/uploads/2024/08/Seguro-Auto-paisagem.png";
 	} else {
-		var image1Url = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Foto-Plano-de-Saude.jpg";
-		var image2Url = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Foto-Consorcio.jpg";
-		var image3Url = "http://localhost/bem-querer-seguros/wp-content/uploads/2024/08/Foto-Seguro-Auto.jpg";
+		var image1Url = "https://www.bemquererseguros.com/wp-content/uploads/2024/08/Foto-Plano-de-Saude.jpg";
+		var image2Url = "https://www.bemquererseguros.com/wp-content/uploads/2024/08/Foto-Consorcio.jpg";
+		var image3Url = "https://www.bemquererseguros.com/wp-content/uploads/2024/08/Foto-Seguro-Auto.jpg";
 	}
 	
 	var image1 = document.getElementsByClassName("soliloquy-image-1")[index];
@@ -27,4 +27,4 @@ function fixImage(index) {
 
 fixImage(0);
 fixImage(1);</script>
-<!-- end Simple Custom CSS and JS -->
+<!--end Simple Custom CSS and JS-- >
